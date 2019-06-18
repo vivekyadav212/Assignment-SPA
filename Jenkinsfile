@@ -1,7 +1,7 @@
 pipeline {
     agent any 
     stages {
-        stage('cleanup cloning repo') { 
+        stage('cleanup & cloning repo') { 
             steps {
                 cleanWs()
                 sh "git clone https://github.com/vivekyadav212/Assignment-SPA.git" 
