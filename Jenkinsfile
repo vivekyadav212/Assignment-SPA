@@ -10,7 +10,7 @@ pipeline {
         stage('build') { 
             steps {
                 sh "cp -r /var/lib/jenkins/workspace/AUTOMATED_RELEASE_PIPELINE/Assignment-SPA/my-app/* ."
-                sh "npm install https://github.com/webpack-contrib/mini-css-extract-plugin"
+                sh "npm install"
                 sh "npm run build"
             }
         }
